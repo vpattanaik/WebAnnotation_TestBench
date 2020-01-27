@@ -1,0 +1,38 @@
+These are the selectors saved:
+
+    RangeSelector: this what we had we had until now: a pair (for start and end) of XPaths pointing to the DOM elements, and the string offsets inside them.
+    TextPositionSelector: this is a pair of string offsets, marking the start and end of the selected text in the character string representing the whole document.
+    TextQuoteSelector: this selector stores three strings:
+        exact: the selected text itself
+        prefix: the (32-char long) text immediately before the selected text
+        suffix: the (32-char long) text immediately after the selected text
+
+============================================================================
+In computer science, robustness is the ability of a computer system to cope with errors during execution and cope with erroneous input. [WIKI]
+============================================================================
+
+Annotation types (3*3 = 9):
+    within one element
+    one complete element
+    within multiple elements
+
+    one word
+    few words (i.e.,phrase)
+    long/multiple sentences
+
+
+Variation types (4*4*3*2 = 96):
+    change in annotated text (less than 50% OR more than 50%)
+        no change
+        add
+        replace
+        delete
+    change in surrounding text (less than 50% OR more than 50%)
+        no change
+        add
+        replace
+        delete
+    change in position
+        no change
+        annotated text
+        surrounding text    
