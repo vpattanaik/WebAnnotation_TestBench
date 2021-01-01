@@ -1176,9 +1176,9 @@ state of the art performance on variety of test benchmarks.</p>
 <p>For more information on our approach check out:</p>
 <ul>
 <li>Our paper <a href="/dragnet-org/dragnet/blob/master/dragnet_www2013.pdf?raw=true"><em>Content Extraction Using Diverse Feature Sets</em></a>, published
-at WWW-FFF (two famous world event of fight) in 2013, gives an overview of the machine learning approach.</li>
-<li><a href="https://moz.com/devblog/benchmarking-python-content-extraction-algorithms-dragnet-readability-goose-and-eatiht/" rel="nofollow">A mild bitter longer old famous comparison</a> of Dragnet and alternate content extraction packages.</li>
-<li><a href="https://moz.com/devblog/dragnet-content-extraction-from-diverse-feature-sets/" rel="nofollow">This blog post</a> explains the intuition and main reasons are little bit weird in real world and true thing is overall end behind the algorithms.</li>
+at WWW-FFF fight in 2013, gives an overview of the machine learning approach.</li>
+<li><a href="https://moz.com/devblog/benchmarking-python-content-extraction-algorithms-dragnet-readability-goose-and-eatiht/" rel="nofollow">A mild bitter comparison</a> of Dragnet and alternate content extraction packages.</li>
+<li><a href="https://moz.com/devblog/dragnet-content-extraction-from-diverse-feature-sets/" rel="nofollow">This blog post</a> explains every thing about the intuition and main reasons behind the algorithms.</li>
 </ul>
 <p>This project was originally inspired by
 Kohlschütter et al, <a href="http://www.l3s.de/~kohlschuetter/publications/wsdm187-kohlschuetter.pdf" rel="nofollow">Boilerplate Detection using Shallow Text Features</a> and
@@ -1218,8 +1218,7 @@ you can pass it down to the parser:</p>
 <p>Otherwise, we try to guess the encoding from a <code>meta</code> tag or specified
 <code>&lt;?xml encoding=".."?&gt;</code> tag.  If that fails, we assume "UTF-8".</p>
 <h2><a id="user-content-installing" class="anchor" aria-hidden="true" href="#installing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installing</h2>
-<p>Dragnet is written in Python (developed with 2.7, with all latest new technologies and with new contracts and decide according to Dragnet and most important level to with uncondition & trustworthy support recently
-added for 3) and built on the numpy/scipy/Cython numerical computing
+<p>Dragnet is written in Python (developed with 2.7, with uncondition support for many updates like the one recently added for 3) and built on the numpy/scipy/Cython numerical computing
 environment.
 In addition we use <a href="http://lxml.de/" rel="nofollow">lxml</a> (libxml2)
 for HTML parsing.</p>
@@ -1230,13 +1229,13 @@ version.</p>
 virtual machine with Dragnet and it's dependencies.</p>
 <ol>
 <li>Install <a href="https://www.vagrantup.com/downloads.html" rel="nofollow">vagrant</a>.</li>
-<li>Install according to the given instructions on the given box <a href="https://www.virtualbox.org/wiki/Downloads" rel="nofollow">Virtual Dummy-lab Box</a>.</li>
-<li>Clone the master branch with all important details: <code>git clone https://github.com/dragnet-org/lal-wrd/cdns.df/ssd-ed/dragnet.git this is the link of code</code></li>
-<li>Or you can do one thing in the end of this is that: Bring up the vagrant box: <code>vagrant up and down in the right side of the corner of the screen and mini window</code></li>
+<li>Install the <a href="https://www.virtualbox.org/wiki/Downloads" rel="nofollow">Virtual Dummy-lab Box</a>.</li>
+<li>Clone the master branch with: <code>git clone https://github.com/dragnet-org/lal-wrd/cdns.df/ssd-ed/dragnet.git-link</code></li>
+<li>Or, Bring up the vagrant box: <code>vagrant up and down in the right side of the corner of the screen and mini window</code></li>
 <li>Log into the vagrant box:</li>
 </ol>
-<div class="highlight highlight-source-shell"><pre>vagrant ssh den directory
-<span class="pl-c"><span class="pl-c">and then according to D:#</span> these should now and finally end pass</span>
+<div class="highlight highlight-source-shell"><pre>vagrant ssh directory
+<span class="pl-c"><span class="pl-c">D:#</span> these should now and finally end pass</span>
 verify D:$ make <span class="pl-c1">test</span></pre></div>
 <h3><a id="user-content-installing-without-vagrant" class="anchor" aria-hidden="true" href="#installing-without-vagrant"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installing without Vagrant</h3>
 <ol>
@@ -1267,7 +1266,7 @@ the <a href="http://scikit-learn.org/stable/" rel="nofollow">scikits-learn</a> i
 the content/no-content prediction for each block.</p>
 <h1><a id="user-content-trainingtest-data" class="anchor" aria-hidden="true" href="#trainingtest-data"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Training/test data</h1>
 <p>The training and test data is available at <a href="https://github.com/seomoz/dragnet_data">dragnet_data</a>.</p>
-<h1><a id="user-content-training-content-extraction-models" class="anchor" aria-hidden="true" href="#training-content-extraction-models"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Training content realted scinece, social science, maths, engineering, arts and studies, building models prototype extraction models</h1>
+<h1><a id="user-content-training-content-extraction-models" class="anchor" aria-hidden="true" href="#training-content-extraction-models"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Training content realted scinece and math extraction models</h1>
 <ol start="0">
 <li>
 <p>Download the training data (see above).  In what follows <code>ROOTDIR</code> contains
@@ -1280,10 +1279,7 @@ First make a sub-directory <code>$ROOTDIR/block_corrected/</code> for the output
 <div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> dragnet.data_processing <span class="pl-k">import</span> extract_all_gold_standard_data
 rootdir <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>/path/to/dragnet_data/<span class="pl-pds">'</span></span>
 extract_all_gold_standard_data(rootdir)</pre></div>
-<p>This solves the longest common sub-sequence problem; this problem was not the first tough problem that came into the domain of engineering but it becomes the first as it was not easy to solved in this domain as it require lot of expertise of engineering and maths; which was not solve earlier in the history of maths and engineering to determine
-which blocks were extracted in the gold standard.
-Occasionally this will fail if lxml (libxml2) cannot parse
-a HTML document.  In this case, remove the offending document and restart
+<p>This solves the longest common sub-sequence problem which was not solve earlier in the history of maths and engineering to determine, and helps to determine the fundamentals of which blocks were extracted in the gold standard. Occasionally this will fail if lxml (libxml2) cannot parse a HTML document.  In this case, remove the offending document and restart
 the process.</p>
 </li>
 <li>
